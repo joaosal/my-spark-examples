@@ -28,7 +28,7 @@ $ spark-submit --class my.spark.examples.scala.LogCount target/my-spark-examples
 $ spark-submit src/main/python/LogCount.py access.log
 </pre>
 
-<h3>SparkApp</h3>
+<h3 id="sparkapp">SparkApp</h3>
 <pre>
 $ spark-submit --class my.spark.examples.scala.SparkApp target/my-spark-examples-1.0.jar
 $ spark-submit src/main/python/SparkApp.py
