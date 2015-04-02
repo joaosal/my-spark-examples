@@ -14,6 +14,12 @@ $ spark-submit --class my.spark.examples.scala.AverageWordLength target/my-spark
 $ spark-submit src/main/python/AverageWordLength.py gettysburg.txt
 </pre>
 
+<h3>LogCount</h3>
+<pre>
+$ spark-submit --class my.spark.examples.scala.LogCount target/my-spark-examples-1.0.jar access.log
+$ spark-submit src/main/python/LogCount.py access.log
+</pre>
+
 <h3>SparkApp</h3>
 <pre>
 $ spark-submit --class my.spark.examples.scala.SparkApp target/my-spark-examples-1.0.jar
