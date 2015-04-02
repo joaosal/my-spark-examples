@@ -14,6 +14,12 @@ $ spark-submit --class my.spark.examples.scala.AverageWordLength target/my-spark
 $ spark-submit src/main/python/AverageWordLength.py gettysburg.txt
 </pre>
 
+<h3>IpAddrCount</h3>
+<pre>
+$ spark-submit --class my.spark.examples.scala.IpAddrCount target/my-spark-examples-1.0.jar access.log 175.44.24.82
+$ spark-submit src/main/python/IpAddrCount.py access.log 175.44.24.82
+</pre>
+
 <h3>LogCount</h3>
 <pre>
 $ spark-submit --class my.spark.examples.scala.LogCount target/my-spark-examples-1.0.jar access.log
