@@ -22,10 +22,13 @@ $ spark-submit --class my.spark.examples.scala.IpAddrCount target/my-spark-examp
 $ spark-submit src/main/python/IpAddrCount.py access.log 175.44.24.82
 </pre>
 
-<h3>LogCount</h3>
+<h3>LineCount</h3>
 <pre>
-$ spark-submit --class my.spark.examples.scala.LogCount target/my-spark-examples-1.0.jar access.log
-$ spark-submit src/main/python/LogCount.py access.log
+$ spark-submit --class my.spark.examples.scala.LineCount target/my-spark-examples-1.0.jar casey.txt
+$ spark-submit --class my.spark.examples.scala.LineCount target/my-spark-examples-1.0.jar access.log
+
+$ spark-submit src/main/python/LineCount.py casey.txt
+$ spark-submit src/main/python/LineCount.py access.log
 </pre>
 
 <h3 id="sparkapp">SparkApp</h3>
