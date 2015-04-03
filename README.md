@@ -34,6 +34,15 @@ $ spark-submit --class my.spark.examples.scala.SparkApp target/my-spark-examples
 $ spark-submit src/main/python/SparkApp.py
 </pre>
 
+<h3 id="sparkconfig">SparkConfig</h3>
+<pre>
+$ spark-submit --class my.spark.examples.scala.SparkConfig target/my-spark-examples-1.0.jar compileTime
+$ spark-submit --class my.spark.examples.scala.SparkConfig --name "RT App" target/my-spark-examples-1.0.jar runTime
+
+$ spark-submit src/main/python/SparkConfig.py compileTime
+$ spark-submit --name "RT App" src/main/python/SparkConfig.py runTime
+</pre>
+
 <h3>WordCount</h3>
 <pre>
 $ spark-submit --class my.spark.examples.scala.WordCount target/my-spark-examples-1.0.jar gettysburg.txt
