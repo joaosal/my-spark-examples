@@ -8,15 +8,13 @@
 
 <p><a href="https://github.com/hagenhaus/my-spark-examples/blob/master/data/gettysburg.txt">gettysburg.txt</a></p>
 
+<h3>epa-http.txt</h3>
+
+<p><a href="http://ita.ee.lbl.gov/html/contrib/EPA-HTTP.html">EPA-HTTP</a></p>
+
 <h3>GlobalAirportDatabase</h3>
 
 <p><a href="http://www.partow.net/miscellaneous/airportdatabase/">Global Airport Database</a></p>
-
-<h3>NASA_access_log_Jul95</h3>
-
-<p><a href="http://ita.ee.lbl.gov/html/contrib/NASA-HTTP.html">NASA-HTTP</a></p>
-
-<p>See the "Jul 01 to Jul 31, ASCII format, 20.7 MB gzip compressed" link.</p>
 
 <h2>Applications</h2>
 
