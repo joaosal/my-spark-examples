@@ -4,13 +4,13 @@
 
 <p><a href="https://github.com/hagenhaus/my-spark-examples/blob/master/data/casey.txt">casey.txt</a></p>
 
-<h3>gettysburg.txt</h3>
-
-<p><a href="https://github.com/hagenhaus/my-spark-examples/blob/master/data/gettysburg.txt">gettysburg.txt</a></p>
-
 <h3>epa-http.txt</h3>
 
 <p><a href="http://ita.ee.lbl.gov/html/contrib/EPA-HTTP.html">EPA-HTTP</a></p>
+
+<h3>gettysburg.txt</h3>
+
+<p><a href="https://github.com/hagenhaus/my-spark-examples/blob/master/data/gettysburg.txt">gettysburg.txt</a></p>
 
 <h3>GlobalAirportDatabase</h3>
 
