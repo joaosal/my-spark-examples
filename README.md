@@ -16,7 +16,7 @@
 
 <p><a href="http://ita.ee.lbl.gov/html/contrib/NASA-HTTP.html">NASA-HTTP</a></p>
 
-<p><a href="ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz">NASA_access_log_Jul95</a></p>
+<p>See the "Jul 01 to Jul 31, ASCII format, 20.7 MB gzip compressed" link.</p>
 
 <h2>Applications</h2>
 
