@@ -1,9 +1,5 @@
 <h2>Data</h2>
 
-<h3>access.log</h3>
-
-<p><a href="http://ita.ee.lbl.gov/html/contrib/NASA-HTTP.html">NASA-HTTP</a></p>
-
 <h3>casey.txt</h3>
 
 <p><a href="https://github.com/hagenhaus/my-spark-examples/blob/master/data/casey.txt">casey.txt</a></p>
@@ -15,6 +11,12 @@
 <h3>GlobalAirportDatabase</h3>
 
 <p><a href="http://www.partow.net/miscellaneous/airportdatabase/">Global Airport Database</a></p>
+
+<h3>NASA_access_log_Jul95</h3>
+
+<p><a href="http://ita.ee.lbl.gov/html/contrib/NASA-HTTP.html">NASA-HTTP</a></p>
+
+<p><a href="ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz">NASA_access_log_Jul95</a></p>
 
 <h2>Applications</h2>
 
