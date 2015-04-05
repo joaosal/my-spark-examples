@@ -1,4 +1,4 @@
-<h2>Example Data</h2>
+<h2>Data</h2>
 
 <h3>access.log</h3>
 
@@ -16,7 +16,7 @@
 
 <p><a href="http://www.partow.net/miscellaneous/airportdatabase/">Global Airport Database</a></p>
 
-<h2>Example Code</h2>
+<h2>Applications</h2>
 
 <h3>AverageWordLength</h3>
 <pre>
