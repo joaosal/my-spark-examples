@@ -77,4 +77,6 @@ $ python ~/training_materials/sparkdev/examples/streamtest.py localhost 1234 20 
 
 Terminal 2:
 $ spark-submit --class my.spark.examples.streaming.ReqCount --master local[2] target/my-spark-examples-1.0.jar localhost 1234
+$ spark-submit --class my.spark.examples.streaming.ReqCount --master local[2] target/my-spark-examples-1.0.jar localhost 1234 state
+$ spark-submit --class my.spark.examples.streaming.ReqCount --master local[2] target/my-spark-examples-1.0.jar localhost 1234 window
 </pre>
