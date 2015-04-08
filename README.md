@@ -16,7 +16,7 @@
 
 <p><a href="http://www.partow.net/miscellaneous/airportdatabase/">Global Airport Database</a></p>
 
-<h2>Examples</h2>
+<h2>my.spark.examples</h2>
 
 <h3>AverageWordLength</h3>
 <pre>
@@ -60,7 +60,7 @@ $ spark-submit --class my.spark.examples.WordCount target/my-spark-examples-1.0.
 $ spark-submit src/main/python/WordCount.py gettysburg.txt
 </pre>
 
-<h2>Streaming Examples</h2>
+<h2>my.spark.examples.streaming</h2>
 <h3>NetCatcher</h3>
 <pre>
 Terminal 1:
