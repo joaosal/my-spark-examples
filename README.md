@@ -16,7 +16,7 @@
 
 <p><a href="http://www.partow.net/miscellaneous/airportdatabase/">Global Airport Database</a></p>
 
-<h2>Applications</h2>
+<h2>Examples</h2>
 
 <h3>AverageWordLength</h3>
 <pre>
@@ -58,4 +58,14 @@ $ spark-submit --name "RT App" src/main/python/SparkConfig.py runTime
 <pre>
 $ spark-submit --class my.spark.examples.WordCount target/my-spark-examples-1.0.jar gettysburg.txt
 $ spark-submit src/main/python/WordCount.py gettysburg.txt
+</pre>
+
+<h2>Streaming Examples</h2>
+<h3>NetCatcher</h3>
+<pre>
+Terminal 1:
+$ nc -lk 1234
+
+Terminal 2:
+$ spark-submit --class my.spark.examples.streaming.NetCatcher --master local[2] target/my-spark-examples-1.0.jar localhost 1234
 </pre>
