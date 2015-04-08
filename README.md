@@ -69,3 +69,12 @@ $ nc -lk 1234
 Terminal 2:
 $ spark-submit --class my.spark.examples.streaming.NetCatcher --master local[2] target/my-spark-examples-1.0.jar localhost 1234
 </pre>
+
+<h3>ReqCount</h3>
+<pre>
+Terminal 1:
+$ python ~/training_materials/sparkdev/examples/streamtest.py localhost 1234 20 /home/training/training_materials/sparkdev/data/weblogs/*
+
+Terminal 2:
+$ spark-submit --class my.spark.examples.streaming.ReqCount --master local[2] target/my-spark-examples-1.0.jar localhost 1234
+</pre>
