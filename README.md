@@ -20,20 +20,20 @@
 
 <h3>AverageWordLength</h3>
 <pre>
-$ spark-submit --class my.spark.examples.scala.AverageWordLength target/my-spark-examples-1.0.jar gettysburg.txt
+$ spark-submit --class my.spark.examples.AverageWordLength target/my-spark-examples-1.0.jar gettysburg.txt
 $ spark-submit src/main/python/AverageWordLength.py gettysburg.txt
 </pre>
 
 <h3>IpAddrCount</h3>
 <pre>
-$ spark-submit --class my.spark.examples.scala.IpAddrCount target/my-spark-examples-1.0.jar access.log 175.44.24.82
+$ spark-submit --class my.spark.examples.IpAddrCount target/my-spark-examples-1.0.jar access.log 175.44.24.82
 $ spark-submit src/main/python/IpAddrCount.py access.log 175.44.24.82
 </pre>
 
 <h3>LineCount</h3>
 <pre>
-$ spark-submit --class my.spark.examples.scala.LineCount target/my-spark-examples-1.0.jar casey.txt
-$ spark-submit --class my.spark.examples.scala.LineCount target/my-spark-examples-1.0.jar access.log
+$ spark-submit --class my.spark.examples.LineCount target/my-spark-examples-1.0.jar casey.txt
+$ spark-submit --class my.spark.examples.LineCount target/my-spark-examples-1.0.jar access.log
 
 $ spark-submit src/main/python/LineCount.py casey.txt
 $ spark-submit src/main/python/LineCount.py access.log
@@ -41,14 +41,14 @@ $ spark-submit src/main/python/LineCount.py access.log
 
 <h3 id="sparkapp">SparkApp</h3>
 <pre>
-$ spark-submit --class my.spark.examples.scala.SparkApp target/my-spark-examples-1.0.jar
+$ spark-submit --class my.spark.examples.SparkApp target/my-spark-examples-1.0.jar
 $ spark-submit src/main/python/SparkApp.py
 </pre>
 
 <h3 id="sparkconfig">SparkConfig</h3>
 <pre>
-$ spark-submit --class my.spark.examples.scala.SparkConfig target/my-spark-examples-1.0.jar compileTime
-$ spark-submit --class my.spark.examples.scala.SparkConfig --name "RT App" target/my-spark-examples-1.0.jar runTime
+$ spark-submit --class my.spark.examples.SparkConfig target/my-spark-examples-1.0.jar compileTime
+$ spark-submit --class my.spark.examples.SparkConfig --name "RT App" target/my-spark-examples-1.0.jar runTime
 
 $ spark-submit src/main/python/SparkConfig.py compileTime
 $ spark-submit --name "RT App" src/main/python/SparkConfig.py runTime
@@ -56,6 +56,6 @@ $ spark-submit --name "RT App" src/main/python/SparkConfig.py runTime
 
 <h3>WordCount</h3>
 <pre>
-$ spark-submit --class my.spark.examples.scala.WordCount target/my-spark-examples-1.0.jar gettysburg.txt
+$ spark-submit --class my.spark.examples.WordCount target/my-spark-examples-1.0.jar gettysburg.txt
 $ spark-submit src/main/python/WordCount.py gettysburg.txt
 </pre>
