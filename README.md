@@ -43,6 +43,12 @@ $ spark-submit src/main/python/LineCount.py casey.txt
 $ spark-submit src/main/python/LineCount.py access.log
 </pre>
 
+<h3 id="pagerank">PageRank</h3>
+<pre>
+$ spark-submit --class my.spark.examples.PageRank target/my-spark-examples-1.0.jar
+$ spark-submit src/main/python/PageRank.py
+</pre>
+
 <h3 id="sparkapp">SparkApp</h3>
 <pre>
 $ spark-submit --class my.spark.examples.SparkApp target/my-spark-examples-1.0.jar
