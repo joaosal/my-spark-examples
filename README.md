@@ -80,6 +80,33 @@ Terminal 2:
 $ spark-submit --class my.spark.examples.streaming.NetCatcher --master local[2] target/my-spark-examples-1.0.jar localhost 1234
 </pre>
 
+<h3>RCBatch</h3>
+<pre>
+Terminal 1:
+$ python ~/training_materials/sparkdev/examples/streamtest.py localhost 1234 20 /home/training/training_materials/sparkdev/data/weblogs/*
+
+Terminal 2:
+$ spark-submit --class my.spark.examples.streaming.RCBatch target/my-spark-examples-1.0.jar --master local[2] localhost 1234 2 KBDOC
+</pre>
+
+<h3>RCState</h3>
+<pre>
+Terminal 1:
+$ python ~/training_materials/sparkdev/examples/streamtest.py localhost 1234 20 /home/training/training_materials/sparkdev/data/weblogs/*
+
+Terminal 2:
+$ spark-submit --class my.spark.examples.streaming.RCState target/my-spark-examples-1.0.jar --master local[2] localhost 1234 2 KBDOC
+</pre>
+
+<h3>RCWindow</h3>
+<pre>
+Terminal 1:
+$ python ~/training_materials/sparkdev/examples/streamtest.py localhost 1234 20 /home/training/training_materials/sparkdev/data/weblogs/*
+
+Terminal 2:
+$ spark-submit --class my.spark.examples.streaming.RCWindow target/my-spark-examples-1.0.jar --master local[2] localhost 1234 2 4 6 KBDOC
+</pre>
+
 <h3>RequestCounter</h3>
 <pre>
 Terminal 1:
