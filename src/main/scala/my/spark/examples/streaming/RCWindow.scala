@@ -32,9 +32,9 @@ object RCWindow {
 
     ssc.checkpoint("checkpoints")
 
-    val counts = flogs.countByWindow(Seconds(windowDuration), Seconds(slideDuration)).map(n => n.toInt)
+    val counts = flogs.countByWindow(Seconds(windowDuration), Seconds(slideDuration)).map(_.toInt)
     val pairs = counts.map(n => ("count", n))
-    val window = pairs.reduceByKey((v1, v2) => v1 + v2)
+    val window = pairs.reduceByKey(_+_)
     
     window.foreachRDD((rdd, time) => {
       println("Time: " + time + ". Logs in Window: " + rdd.collect()(0)._2 + "\n")

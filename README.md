@@ -22,6 +22,12 @@
 
 <h2>my.spark.examples</h2>
 
+<h3>AverageMovieRatings</h3>
+<pre>
+$ spark-submit --class my.spark.examples.AverageMovieRatings target/my-spark-examples-1.0.jar
+$ spark-submit src/main/python/AverageMovieRatings.py
+</pre>
+
 <h3>AverageWordLength</h3>
 <pre>
 $ spark-submit --class my.spark.examples.AverageWordLength target/my-spark-examples-1.0.jar gettysburg.txt
