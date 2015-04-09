@@ -95,6 +95,15 @@ Terminal 2:
 $ spark-submit --class my.spark.examples.streaming.RCBatch target/my-spark-examples-1.0.jar --master local[2] localhost 1234 2 KBDOC
 </pre>
 
+<h3>RCPartition</h3>
+<pre>
+Terminal 1:
+$ python ~/training_materials/sparkdev/examples/streamtest.py localhost 1234 20 /home/training/training_materials/sparkdev/data/weblogs/*
+
+Terminal 2:
+$ spark-submit --class my.spark.examples.streaming.RCPartition target/my-spark-examples-1.0.jar --master local[2] localhost 1234 2 KBDOC
+</pre>
+
 <h3>RCState</h3>
 <pre>
 Terminal 1:
