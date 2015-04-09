@@ -80,7 +80,7 @@ Terminal 1:
 $ python ~/training_materials/sparkdev/examples/streamtest.py localhost 1234 20 /home/training/training_materials/sparkdev/data/weblogs/*
 
 Terminal 2:
-$ spark-submit --class my.spark.examples.streaming.ReqCount --master local[2] target/my-spark-examples-1.0.jar localhost 1234
-$ spark-submit --class my.spark.examples.streaming.ReqCount --master local[2] target/my-spark-examples-1.0.jar localhost 1234 state
-$ spark-submit --class my.spark.examples.streaming.ReqCount --master local[2] target/my-spark-examples-1.0.jar localhost 1234 window
+$ spark-submit --class my.spark.examples.streaming.RequestCounter --master local[2] target/my-spark-examples-1.0.jar localhost 1234 jpg batch
+$ spark-submit --class my.spark.examples.streaming.RequestCounter --master local[2] target/my-spark-examples-1.0.jar localhost 1234 jpg state
+$ spark-submit --class my.spark.examples.streaming.RequestCounter --master local[2] target/my-spark-examples-1.0.jar localhost 1234 jpg window
 </pre>
