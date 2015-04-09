@@ -4,29 +4,27 @@ import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.streaming.StreamingContext._
 
-object ReqCount {
+object RequestCounter {
 
   def main(args: Array[String]) {
   
     var host:String = ""
     var port:Int = 0
+    var filter:String = ""
     var mode:String = ""
 
     val batchDuration = 2
     val slideDuration = 4
     val windowDuration = 6
 
-    if (args.length == 2) {
-      host = args(0)
-      port = args(1).toInt
-      mode = "batch"
-    } else if (args.length == 3 && (args(2) == "state" || args(2) == "window")) {
-      host = args(0)
-      port = args(1).toInt
-      mode = args(2)
-    } else {
-      println("Usage: ReqCount <host> <port> [state|window]")
+    if (args.length != 4 || (args(3) != "batch" && args(3) != "state" && args(3) != "window")) {
+      println("Usage: RequestCounter <host> <port> <filter> <batch|state|window>")
       System.exit(1)
+    } else {
+      host = args(0)
+      port = args(1).toInt
+      filter = args(2)
+      mode = args(3)
     }
 
     if (mode == "batch" || mode == "state") {
@@ -42,7 +40,7 @@ object ReqCount {
     }
 
     val logs = ssc.socketTextStream(host, port)
-    val kblogs = logs.filter(log => log.contains("KBDOC"))
+    val kblogs = logs.filter(log => log.contains(filter))
     val batchCount = kblogs.count().map(num => num.toInt)
 
     batchCount.foreachRDD((rdd, time) => {
