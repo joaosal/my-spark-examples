@@ -30,6 +30,7 @@ object ReqCountState {
 
     ssc.start()
     ssc.awaitTermination()
+    ssc.stop()
   }
 
   def updateCount(newCounts: Seq[Int], state: Option[Int]): Option[Int] = {

@@ -23,5 +23,6 @@ object ReqCountBase {
 
     ssc.start()
     ssc.awaitTermination()
+    ssc.stop()
   }
 }

@@ -32,5 +32,6 @@ object ReqCountPartition {
 
     ssc.start()
     ssc.awaitTermination()
+    ssc.stop()
   }
 }

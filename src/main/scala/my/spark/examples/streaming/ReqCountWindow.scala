@@ -32,5 +32,6 @@ object ReqCountWindow {
 
     ssc.start()
     ssc.awaitTermination()
+    ssc.stop()
   }
 }

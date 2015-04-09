@@ -27,5 +27,6 @@ object ReqCountTop {
 
     ssc.start()
     ssc.awaitTermination()
+    ssc.stop()
   }
 }

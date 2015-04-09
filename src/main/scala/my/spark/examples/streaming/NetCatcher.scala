@@ -27,5 +27,6 @@ object NetCatcher {
     counts.print()
     ssc.start()
     ssc.awaitTermination()
+    ssc.stop()
   }
 }

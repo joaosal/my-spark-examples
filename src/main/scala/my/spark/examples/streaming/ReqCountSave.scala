@@ -24,5 +24,6 @@ object ReqCountSave {
 
     ssc.start()
     ssc.awaitTermination()
+    ssc.stop()
   }
 }
